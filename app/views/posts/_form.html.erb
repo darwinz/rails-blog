@@ -21,6 +21,11 @@
     <%= form.text_area :body, size: '200x50', id: :post_body %>
   </div>
 
+  <div class="field">
+    <%= form.label :slug %>
+    <%= form.text_field :slug, id: :post_slug %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
