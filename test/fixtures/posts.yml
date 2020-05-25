@@ -2,6 +2,10 @@
 
 one:
   title: MyString
+  body: Body text
+  slug: MySlug
 
 two:
   title: MyString
+  body: Body text
+  slug: MySlug
