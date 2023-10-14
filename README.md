@@ -1,24 +1,57 @@
-# README
+# Rails Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails blog setup
 
-Things you may want to cover:
+Pre-requisites
+------------------
 
-* Ruby version
+* Ruby 2.4.1+
+* Rails 5.1.4+
+* PostgreSQL
+* NPM 5.3.0+
+* Node.js 8.5.0+
+* React 16.1.1+
 
-* System dependencies
 
-* Configuration
+PostgreSQL installation
+------------------
 
-* Database creation
+Basic installation on Debian you can use the following documentation: [wiki.debian.org/PostgreSql](https://wiki.debian.org/PostgreSql)
+on Ubuntu you can use: [help.ubuntu.com/community/PostgreSQL](https://help.ubuntu.com/community/PostgreSQL)
 
-* Database initialization
+Install / Setup
+------------------
 
-* How to run the test suite
+* Clone this repository
+* Run npm install
+```bash
+$ npm install
+```
+* Run bundle
+```bash
+$ bundle
+```
+* Create db
+```bash
+$ bundle exec rake db:create
+```
+* Run migrations
+```bash
+$ bundle exec rake db:migrate
+```
+* Run db seed script
+```bash
+$ bundle exec rake db:seed
+```
+* Start rails server
+```bash
+$ bundle exec rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Testing
+------------------
 
-* Deployment instructions
-
-* ...
+* Run the test suite
+```bash
+$ bundle exec bin/rails test test
+```
